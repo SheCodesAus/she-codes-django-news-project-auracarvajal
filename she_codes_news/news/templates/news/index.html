@@ -5,7 +5,15 @@
     <link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
     {% endblock %}
     {% block content %}
-    <h2>Latest News</h2>
+
+    {% if request.user.is_authenticated %}
+    <div id="new-story">  
+        <button><a href="{% url 'news:newStory' %}">Write New Story</a></button>
+        
+    </div>
+    {% endif %}
+
+    <h2>LATEST NEWS</h2>
 
     <div id="latest-stories">
         {% if latest_stories %}
@@ -26,4 +34,5 @@
             <p>No stories are available.</p>
         {% endif %}
     </div>
+
     {% endblock %}

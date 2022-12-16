@@ -15,8 +15,12 @@
     <body>
         <header>
             <div id="header-text">
-                <a id="header-link" href="{% url 'news:index' %}">
-                    <h1>She {Codes} News</h1>
+                <a id="header-link" href="{% url 'news:index' %}">  
+                    <h1>
+                        <span style="color:white">SHE</span>
+                        <span style="color:#EB984E ">{CODES}</span>
+                        <span style="color:white">NEWS</span>
+                    </h1>
                 </a>
             </div>
             <!-- include nav here -->
@@ -27,3 +31,4 @@
         {% block content %}{% endblock %}
     </body>
 </html>
+

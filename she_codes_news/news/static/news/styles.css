@@ -84,3 +84,31 @@
     margin: 0 0 10px 10px;
     width: 50%;
 }
+
+/* #new-story button{
+    background-color: blueviolet;
+    display:inline;
+} */
+
+#new-story{
+    margin-top: 15px;
+    text-align: center;
+}
+
+#new-story button{
+    background-color:#A569BD;
+    padding: 15px;
+    border:none;
+    border-radius: 10px;
+
+}
+
+#new-story button:hover{
+    background-color:#566573;
+    transition: 0.7s;
+}
+
+#new-story a{
+    color:white;
+    font-weight: bold;
+}
