@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div id="write-story">
+<h2>Write New Story</h2>
 {% if request.user.is_authenticated %}
 <form action="" method="post">
     {% csrf_token %}
@@ -10,6 +12,7 @@
 {% else %}
 <h2> Please login to add a story</h2>
 {% endif %}
+</div>
 
 {% endblock %}
 

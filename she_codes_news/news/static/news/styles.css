@@ -77,12 +77,31 @@
 
 #story-content {
     text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+   
 }
+
+
 
 #story-content img {
     float: right;
-    margin: 0 0 10px 10px;
+    /* margin: 0 0 10px 10px; */
+    margin-left: 40px; 
     width: 50%;
+    
+}
+
+#story-wrapper{
+    margin-top: 50px;
+}
+
+#story-wrapper h2{
+    margin-left: 20px;
+}
+
+#story-wrapper h4{
+    margin-left: 20px;
 }
 
 /* #new-story button{
@@ -112,3 +131,7 @@
     color:white;
     font-weight: bold;
 }
+
+
+
+

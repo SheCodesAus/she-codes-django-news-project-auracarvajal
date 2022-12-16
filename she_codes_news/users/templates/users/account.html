@@ -2,16 +2,23 @@
 {% load static %}
 {% block content %}
 <div>
-    <h2>User info</h2>
-    <p>{{ user.username }}</p>
-    <p>{{ user.email }}</p>
+    <h2>User Profile:</h2>
+    <p>Name: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
 </div>
+<br>
 
-<div>
+<div id="author-stories">
+    <h2 style="font-size:14px;">Author stories:</h2>
+
     {% for story in user.stories.all %}
     <ul> 
+        
        <li><a href="{% url 'news:story' story.id %}">{{story.title}}</a></li>  
     </ul>
+
+    <!-- {% include 'news/storyCard.html' with story=story position=forloop.counter%} -->
+
     {% endfor %}
 </div>
 {% endblock %}
